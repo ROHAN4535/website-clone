@@ -1,0 +1,59 @@
+.essentials-image {
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 2em; 
+  margin-bottom: 20px; 
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 25%;
+  width: 50%;
+  height: 1px;
+  background-color: black;
+}
+
+.ess-button {
+  color: white;
+  background-color: black;
+  margin: 1% 0; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ess-button:hover {
+  background-color: gray;
+}
+
+@media (max-width: 768px) {
+  .essentials-image {
+    width: 100%;
+    height: auto; 
+  }
+  
+  h1 {
+    font-size: 1.5em; 
+    text-align: center; 
+  }
+
+  h1::after {
+    left: 10%; 
+    width: 80%; 
+  }
+
+  .ess-button {
+    width: 100%; 
+    padding: 10px 0; 
+  }
+}

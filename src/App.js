@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import MainHeader from './components/MainHeader';
+import Header from './components/Header';
+import Essentials from './components/Essentials';
+import NewArrivals from './components/NewArrivals';
+import Explore from './components/Explore';
+import PersonalisedTrialRoom from './components/PersonalisedTrialRoom';
+import EveryOrderCounts from './components/EveryOrderCounts';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainHeader />
+      <Header/>
+      <Essentials/>
+      <NewArrivals/>
+      <Explore/>
+      <PersonalisedTrialRoom/>
+      <EveryOrderCounts/>
+      <Footer/>
     </div>
   );
 }

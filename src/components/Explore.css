@@ -1,0 +1,45 @@
+.explore1-image {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+  }
+  
+  .ex-button {
+    color: white;
+    background-color: black;
+    margin: 1%;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+  }
+  
+  .ex-button:hover {
+    background-color: gray;
+  }
+  
+  @media (max-width: 768px) {
+    .explore1-image {
+      width: 100%;
+      height: auto; 
+    }
+  
+    .ex-button {
+      width: 100%; 
+      padding: 15px 0; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .explore1-image {
+      width: 100%;
+      height: auto; 
+    }
+  
+    .ex-button {
+      width: 100%; 
+      padding: 10px 0; 
+    }
+  }
+  
